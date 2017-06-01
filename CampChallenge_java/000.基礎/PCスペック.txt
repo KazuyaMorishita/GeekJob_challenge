@@ -1,0 +1,6 @@
+﻿Windows Edition：Windows Ultimate
+プロセッサ：intel(R) Core(TM)i7-3612QM CPU @ 2.10GHz 2.10 GHz
+メモリ：8.00GB
+システムの種類：64ビットオペレーティング・システム
+SSD:256GB
+
