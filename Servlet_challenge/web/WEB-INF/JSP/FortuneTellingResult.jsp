@@ -9,9 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>今日の運勢</title>
+        <%
+            ResultData data = (ResultData)request.getAttribute("DATA");
+        %>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%
+        
+            if (data != null){
+                out.println("<h1>あなたの" + data.getD() + "運勢は、" + data.getLuck() + "です！<h1>");
+            }
+
+        %>
     </body>
 </html>

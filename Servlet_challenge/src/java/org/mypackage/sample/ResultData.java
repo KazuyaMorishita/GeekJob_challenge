@@ -6,31 +6,32 @@ package org.mypackage.sample;
  * and open the template in the editor.
  */
 
+import java.io.Serializable;
 import java.util.Date;
-import java.util.Random;
-import javax.servlet.RequestDispatcher;
-import org.camp.servlet.ResultData;
+
 /**
  *
  * @author kazuya
  */
-public class ResultData impliments Serializable{
+public class ResultData implements Serializable{
     private Date d;
     private String luck;
 
-    publick ResultData() {}
+    public ResultData(){}
 
     public Date getD() {
         return d;
     }
-
-    public void  setD(date D){
+    
+    public void  setD(Date d){
         this.d = d;
-}
+    }
 
     public String getLuck(){
         return luck;
-}
+    }
 
-
+    public void setLuck(String luck){
+        this.luck = luck;
+    }
 }

@@ -11,7 +11,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 import java.util.Random;
+import javax.servlet.RequestDispatcher;
+import org.mypackage.sample.ResultData;
 
 /**
  *
@@ -33,26 +36,28 @@ public class FortuneTelling extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-                //大吉、中吉、吉、小吉、半吉、末小吉、凶、小凶、半凶、末凶、凶、大凶を格納
-                String luckList[] = {"大吉","中吉","小吉","吉","半吉","末吉","末小吉","凶","小凶","末凶","大凶"};
+            String result = "org.mypackage.sample.FortuneTellingResult.jsp";
+
+            //大吉、中吉、吉、小吉、半吉、末小吉、凶、小凶、半凶、末凶、凶、大凶を格納
+            String luckList[] = {"大吉","中吉","小吉","吉","半吉","末吉","末小吉","凶","小凶","末凶","大凶"};
                 
-                //乱数クラス生成
-                Random rand = new Random();
+            //乱数クラス生成
+            Random rand = new Random();
                 
-                //乱数取得
-                Integer index = rand.nextInt(luckList.length);
+             //乱数取得
+             Integer index = rand.nextInt(luckList.length);
                 
-                out.println("今日のあなたの運勢は" + luckList[index]);
+             out.println("今日のあなたの運勢は" + luckList[index]);
                 
-                //リクエストスコープへ結果を設定
-                ResultData data = new ResultData();
-                data.setD(nwe Date);
-                data.setLuck(luckList[index]);
-                request.setAttribute(DATA,data);
+            //リクエストスコープへ結果を設定
+            ResultData data = new ResultData();
+            data.setD(new Date());
+            data.setLuck(luckList[index]);
+            request.setAttribute("DATA",data);
                 
-                //ReqestDispatcherを取得
-                RequestDispatcher RD = reqest.getDispatcher(FortuneTellingResult);
-                RD.forward(request,responce);
+            //ReqestDispatcherを取得
+            RequestDispatcher RD = request.getRequestDispatcher(result);
+            RD.forward(request,response);
                 
         }
     }
