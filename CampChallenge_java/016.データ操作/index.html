@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>いざレッドラインへ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!-- -->
+        <div class="container">
+
+            <div class="content">
+                
+                <!--入力フォーム-->
+                <form action="./usrInfo.jsp" method="post">
+                    
+                    <!--名前入力欄-->
+                    お名前：<input type="text" name="usrName"><br>
+                    
+                    <!--男性用ラジオボタン-->
+                    性別：男<input type="radio" name="rdoBtn" value="male">
+                    <!--女性用ラジオボタン-->
+                    女<input type="radio" name="rdoBtn" value="female"><br>
+                    
+                    <!--趣味欄 -->
+                    趣味を書いてね<br>
+                    <textarea name="mulText"></textarea><br>
+                    
+                    <input type="submit" name="sbmBtn" value="送信">
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

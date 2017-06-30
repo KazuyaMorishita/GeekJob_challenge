@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/06/30, 14:24:52
+    Author     : kazuya
+*/
+
+div.container{
+margin-left: 10px;
+}
+
+h1{
+font-size: 14px;
+}
+
+div.top_img{
+    width: 640px;
+    height:240px;
+    background-color: #d2b48c;
+}
+
+div.lsbar{
+float: left;
+ width:148px;
+}
+
+ul.ulTest{
+  padding: 0;
+  font: 14px/1.6 'arial narrow', sans-serif;
+  width:150px;
+  list-style: none;
+}
+ul.ulTest li{
+  position: relative;
+  padding: 0.5em 1em 0.5em 2.3em;
+  margin-bottom:5px;
+  color: rgb(0,0,0);
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(129,194,250, 0.5);
+}
+ul.ulTest li:after,
+ul.ulTest li:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+ul.ulTest li:before{
+  left: 0.2em;
+  width: 17px;
+  height: 17px;
+  background: rgba(129,194,250,0.5);
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ul.ulTest li:after{
+  top: 1.1em;
+  left: 0.7em;
+  width: 14px;
+  height: 14px;
+  background: rgba(129,194,250,0.3);
+}
+
+h2{
+font-size: 14px;
+}
+
+div.content{
+float: left;
+width: 490px;
+margin-top: 2px;
+margin-left: 2px;
+background-color: #d2b48c;
+}
