@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/07/18, 13:24:08
+    Author     : kazuya
+*/
+
+/*------ここからlogin.jspのcssを記述------*/
+
+div.login_contents{
+    width: 480px;
+    background-color: #cbb994;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #716246;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+div.login_contents h1{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+div.login_contents form div.form_style{
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+div.login_contents form div.form_style div.label{
+    padding-bottom: 10px;
+}
+
+/*------ここまでlogin.jspのcssを記述------*/
+
+/*------ここからselect.jspのcssを記述------*/
+
+div.sel_contents{
+    width: 480px;
+    background-color: #cbb994;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #716246;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+div.sel_contents h1{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.ul_style{
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: px;
+}
+
+ul li{
+    padding-bottom: 20px
+}
+
+/*------ここまでselect.jspのcssを記述------*/
+
+/*------ここからreg.jspのcssを記述------*/
+
+div.reg_contents{
+    width: 480px;
+    background-color: #cbb994;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #716246;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+div.reg_contents h1{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+div.reg_contents form div.form_style{
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+div.reg_contents form div.form_style div.label{
+    padding-bottom: 10px;
+}
+
+/*------ここまでreg.jspのcssを記述------*/
+
+/*------ここからitemLi_print.jspのcssを記述------*/
+
+
+
+/*------ここまでitemLi_print.jspのcssを記述------*/
